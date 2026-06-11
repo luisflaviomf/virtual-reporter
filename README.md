@@ -14,6 +14,20 @@ O projeto tem dois pacotes principais:
 Os datasets, modelos treinados e resultados gerados ficam em `data/` e nao sao
 versionados no Git por tamanho e rastreabilidade.
 
+Excecao: o dataset consolidado final usado nos experimentos fica versionado em
+`data/output/final_all_sources/`, para permitir reproduzir o processamento e o
+treinamento. Os modelos treinados continuam fora do Git e devem ser recriados
+localmente.
+
+Arquivos principais do dataset:
+
+- `news_articles_full.jsonl`: 10.189 registros brutos consolidados.
+- `news_articles_canonical.jsonl`: 8.681 registros canonicos, usados no treino.
+- `article_links.csv`: links e anexos extraidos das noticias.
+- `media_assets.csv`: imagens e midias associadas.
+- `duplicate_groups.csv`: grupos de duplicidade.
+- `dataset_report.json` e `quality_report.md`: resumo e qualidade do dataset.
+
 ## Virtual Reporter Experiments
 
 ```bash
@@ -22,6 +36,14 @@ python -m ifmt_models.cli evaluate-retrieval-strict
 python -m ifmt_models.cli evaluate-briefings-strict
 python -m ifmt_models.cli make-paper-assets
 python -m ifmt_models.cli report-results
+```
+
+Para treinar/recriar os modelos a partir do dataset versionado:
+
+```bash
+pip install -r requirements.txt
+pip install -r requirements-models.txt
+python -m ifmt_models.cli run-all
 ```
 
 Principais saidas locais:

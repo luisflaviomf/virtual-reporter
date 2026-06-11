@@ -1,0 +1,324 @@
+{
+  "expected_raw_total": 10189,
+  "total_raw_articles": 10189,
+  "expected_raw_total_matched": true,
+  "total_canonical_articles": 8681,
+  "total_noncanonical_duplicates": 1508,
+  "total_duplicate_groups": 665,
+  "cross_dataset_duplicate_groups": 44,
+  "total_by_original_dataset_source": {
+    "final_combined": 7942,
+    "final_antigoportal": 2247
+  },
+  "total_by_source_environment": {
+    "legacy_ip_portal": 7601,
+    "old_subdomain_portal": 2247,
+    "current_wordpress_portal": 212,
+    "campus_current_portal": 129
+  },
+  "total_by_source_host": {
+    "200.129.244.212": 7601,
+    "tga.antigoportal.ifmt.edu.br": 402,
+    "lrv.antigoportal.ifmt.edu.br": 370,
+    "svc.antigoportal.ifmt.edu.br": 250,
+    "pdl.antigoportal.ifmt.edu.br": 225,
+    "cfs.antigoportal.ifmt.edu.br": 225,
+    "ifmt.edu.br": 212,
+    "cba.antigoportal.ifmt.edu.br": 200,
+    "cas.antigoportal.ifmt.edu.br": 200,
+    "blv.antigoportal.ifmt.edu.br": 200,
+    "antigoportal.ifmt.edu.br": 100,
+    "bag.antigoportal.ifmt.edu.br": 75,
+    "cba.ifmt.edu.br": 49,
+    "svc.ifmt.edu.br": 49,
+    "pdl.ifmt.edu.br": 16,
+    "bag.ifmt.edu.br": 15
+  },
+  "total_by_year": {
+    "2023": 1069,
+    "2021": 920,
+    "2015": 894,
+    "2022": 852,
+    "2020": 840,
+    "2019": 789,
+    "2017": 742,
+    "2018": 651,
+    "2025": 628,
+    "2024": 594,
+    "2016": 531,
+    "2014": 285,
+    "2026": 182,
+    "2013": 46,
+    "2012": 25,
+    "2011": 18,
+    "2007": 4,
+    "2008": 2,
+    "1987": 2,
+    "1966": 1
+  },
+  "total_by_normalized_unit": {
+    "Reitoria": 5576,
+    "Campus Cuiabá": 577,
+    "Campus São Vicente": 513,
+    "Campus Cáceres": 437,
+    "Campus Tangará da Serra": 420,
+    "Campus Cuiabá - Bela Vista": 398,
+    "Campus Lucas do Rio Verde": 381,
+    "Campus Confresa": 306,
+    "Campus Primavera do Leste": 271,
+    "unknown": 212,
+    "Campus Pontes e Lacerda": 191,
+    "Campus Várzea Grande": 174,
+    "Campus Rondonópolis": 165,
+    "Campus Barra do Garças": 142,
+    "Campus Juína": 110,
+    "Campus Campo Novo do Parecis": 107,
+    "Campus Sorriso": 105,
+    "Campus Diamantino": 38,
+    "Campus Alta Floresta": 37,
+    "Campus Guarantã do Norte": 10,
+    "Campus Avançado de": 8,
+    "Campus Sinop": 7,
+    "Centro de Referência de Canarana": 3,
+    "Centro de Referência de Campo Verde": 1
+  },
+  "total_with_title": 10189,
+  "total_with_body": 10164,
+  "total_with_date": 9075,
+  "total_with_author_or_unit": 10189,
+  "total_with_images": 1568,
+  "total_with_links": 6039,
+  "total_with_attachments": 1126,
+  "total_needs_review": 395,
+  "total_errors": 3,
+  "media_assets_count": 2728,
+  "article_links_count": 13705,
+  "word_count_stats": {
+    "average": 293.29,
+    "median": 250,
+    "min": 0,
+    "max": 3513
+  },
+  "coverage_percent": {
+    "title": 100.0,
+    "body_text": 99.75,
+    "publication_date": 89.07,
+    "author_or_unit": 100.0,
+    "links": 59.27,
+    "attachments": 11.05,
+    "images": 15.39
+  },
+  "top_10_errors": [
+    [
+      "Missing or weak extraction: body_text",
+      395
+    ],
+    [
+      "HTTP status 403",
+      2
+    ],
+    [
+      "HTTP status 500",
+      1
+    ]
+  ],
+  "examples_cross_dataset_duplicates": [
+    {
+      "global_duplicate_group_id": "gdup_00000221",
+      "duplicate_count": 3,
+      "canonical_article_id": "gart_00006917",
+      "original_dataset_sources": [
+        "final_antigoportal",
+        "final_combined"
+      ],
+      "titles": [
+        "IFMT abre inscrições para Vestibular com 2160 vagas para cursos superiores a distância",
+        "IFMT abre inscrições para Vestibular com 450 vagas para cursos superiores à distância",
+        "IFMT abre inscrições para Vestibular com 450 vagas para cursos superiores à distância"
+      ],
+      "original_urls": [
+        "https://200.129.244.212/conteudo/noticia/ifmt-abre-inscricoes-para-vestibular-com-2160-vagas-para-cursos-superiores-distancia/",
+        "https://lrv.antigoportal.ifmt.edu.br/noticias/1007911/",
+        "https://tga.antigoportal.ifmt.edu.br/noticias/1007911/"
+      ]
+    },
+    {
+      "global_duplicate_group_id": "gdup_00000234",
+      "duplicate_count": 2,
+      "canonical_article_id": "gart_00007373",
+      "original_dataset_sources": [
+        "final_antigoportal",
+        "final_combined"
+      ],
+      "titles": [
+        "Inscrições abertas para Processo Seletivo com 18 vagas para professores substitutos",
+        "Inscrições abertas para processo seletivo com 4 vagas para professores substitutos"
+      ],
+      "original_urls": [
+        "https://200.129.244.212/conteudo/noticia/inscricoes-abertas-para-processo-seletivo-com-18-vagas-para-professores-substitutos/",
+        "https://cas.antigoportal.ifmt.edu.br/noticias/1010459/"
+      ]
+    },
+    {
+      "global_duplicate_group_id": "gdup_00000236",
+      "duplicate_count": 2,
+      "canonical_article_id": "gart_00007530",
+      "original_dataset_sources": [
+        "final_antigoportal",
+        "final_combined"
+      ],
+      "titles": [
+        "Inscrições abertas para seleção de tutores presenciais com 52 vagas no Programa Profuncionário/MT",
+        "Inscrições abertas para seleção de tutores presenciais com 52 vagas no Programa Profuncionário/MT"
+      ],
+      "original_urls": [
+        "https://200.129.244.212/conteudo/noticia/inscricoes-abertas-para-selecao-de-tutores-presenciais-com-52-vagas-no-programa-profuncionariomt/",
+        "https://antigoportal.ifmt.edu.br/noticias/1011680/"
+      ]
+    },
+    {
+      "global_duplicate_group_id": "gdup_00000237",
+      "duplicate_count": 11,
+      "canonical_article_id": "gart_00007954",
+      "original_dataset_sources": [
+        "final_antigoportal",
+        "final_combined"
+      ],
+      "titles": [
+        "PROPES: Divulgado o resultado final do edital nº57/2015, referente a afastamento de servidores para capacitação",
+        "PROPES: Divulgado o resultado final do edital nº57/2015, referente a afastamento de servidores para capacitação",
+        "PROPES: Divulgado o resultado final do edital nº57/2015, referente a afastamento de servidores para capacitação",
+        "PROPES: Divulgado o resultado final do edital nº57/2015, referente a afastamento de servidores para capacitação",
+        "PROPES: Divulgado o resultado final do edital nº57/2015, referente a afastamento de servidores para capacitação"
+      ],
+      "original_urls": [
+        "https://200.129.244.212/conteudo/noticia/propes-divulgado-o-resultado-final-do-edital-n572015-referente-afastamento-de-servidores-para-capacitacao/",
+        "https://cba.antigoportal.ifmt.edu.br/noticias/1011679/",
+        "https://svc.antigoportal.ifmt.edu.br/noticias/1011679/",
+        "https://lrv.antigoportal.ifmt.edu.br/noticias/1011679/",
+        "https://tga.antigoportal.ifmt.edu.br/noticias/1011679/"
+      ]
+    },
+    {
+      "global_duplicate_group_id": "gdup_00000238",
+      "duplicate_count": 3,
+      "canonical_article_id": "gart_00007532",
+      "original_dataset_sources": [
+        "final_antigoportal",
+        "final_combined"
+      ],
+      "titles": [
+        "Aluno do IFMT-Campus Primavera do Leste conquistou o título de campeão nacional de Robótica, na modalidade teórica",
+        "Aluno do IFMT-Campus Primavera do Leste conquistou o título de campeão nacional de Robótica, na modalidade teórica",
+        "Aluno do IFMT-Campus Primavera do Leste conquistou o título de campeão nacional de Robótica, na modalidade teórica"
+      ],
+      "original_urls": [
+        "https://200.129.244.212/conteudo/noticia/aluno-do-ifmt-campus-primavera-do-leste-conquistou-o-titulo-de-campeao-nacional-de-robotica-na-modalidade-teorica/",
+        "https://pdl.antigoportal.ifmt.edu.br/noticias/1011677/",
+        "https://antigoportal.ifmt.edu.br/noticias/1011677/"
+      ]
+    },
+    {
+      "global_duplicate_group_id": "gdup_00000239",
+      "duplicate_count": 2,
+      "canonical_article_id": "gart_00007983",
+      "original_dataset_sources": [
+        "final_antigoportal",
+        "final_combined"
+      ],
+      "titles": [
+        "Nota de falecimento",
+        "Nota de falecimento"
+      ],
+      "original_urls": [
+        "https://200.129.244.212/conteudo/noticia/nota-de-falecimento/",
+        "https://antigoportal.ifmt.edu.br/noticias/1011676/"
+      ]
+    },
+    {
+      "global_duplicate_group_id": "gdup_00000240",
+      "duplicate_count": 2,
+      "canonical_article_id": "gart_00007534",
+      "original_dataset_sources": [
+        "final_antigoportal",
+        "final_combined"
+      ],
+      "titles": [
+        "Ministro do Desenvolvimento Agrário visita nessa quarta-feira (11/11) região do Araguaia Xingu no projeto Território em Foco",
+        "Ministro do Desenvolvimento Agrário visita nessa quarta-feira (11/11) região do Araguaia Xingu no projeto Território em Foco"
+      ],
+      "original_urls": [
+        "https://200.129.244.212/conteudo/noticia/ministro-do-desenvolvimento-agrario-visita-nessa-quarta-feira-1111-regiao-do-araguaia-xingu-no-projeto-territorio-em-foco/",
+        "https://antigoportal.ifmt.edu.br/noticias/1011668/"
+      ]
+    },
+    {
+      "global_duplicate_group_id": "gdup_00000241",
+      "duplicate_count": 2,
+      "canonical_article_id": "gart_00007536",
+      "original_dataset_sources": [
+        "final_antigoportal",
+        "final_combined"
+      ],
+      "titles": [
+        "TERMITER: IFMT realiza primeiro depósito de patente com invento desenvolvido no Campus Cáceres",
+        "TERMITER: IFMT realiza primeiro depósito de patente com invento desenvolvido no Campus Cáceres"
+      ],
+      "original_urls": [
+        "https://200.129.244.212/conteudo/noticia/termiter-ifmt-realiza-primeiro-deposito-de-patente-com-invento-desenvolvido-no-campus-caceres1/",
+        "https://antigoportal.ifmt.edu.br/noticias/1011653/"
+      ]
+    },
+    {
+      "global_duplicate_group_id": "gdup_00000242",
+      "duplicate_count": 11,
+      "canonical_article_id": "gart_00007537",
+      "original_dataset_sources": [
+        "final_antigoportal",
+        "final_combined"
+      ],
+      "titles": [
+        "IFMT e TRT/MT firmaram parceria sobre Trabalho Seguro",
+        "IFMT e TRT/MT firmaram parceria sobre Trabalho Seguro",
+        "IFMT e TRT/MT firmaram parceria sobre Trabalho Seguro",
+        "IFMT e TRT/MT firmaram parceria sobre Trabalho Seguro",
+        "IFMT e TRT/MT firmaram parceria sobre Trabalho Seguro"
+      ],
+      "original_urls": [
+        "https://200.129.244.212/conteudo/noticia/ifmt-e-trtmt-firmaram-parceria-sobre-trabalho-seguro1/",
+        "https://svc.antigoportal.ifmt.edu.br/noticias/1011604/",
+        "https://lrv.antigoportal.ifmt.edu.br/noticias/1011604/",
+        "https://tga.antigoportal.ifmt.edu.br/noticias/1011604/",
+        "https://bag.antigoportal.ifmt.edu.br/noticias/1011604/"
+      ]
+    },
+    {
+      "global_duplicate_group_id": "gdup_00000243",
+      "duplicate_count": 2,
+      "canonical_article_id": "gart_00007538",
+      "original_dataset_sources": [
+        "final_antigoportal",
+        "final_combined"
+      ],
+      "titles": [
+        "Reitoria do IFMT realiza atividades em comemoração ao Dia do Servidor Público",
+        "Reitoria do IFMT realiza atividades em comemoração ao Dia do Servidor Público"
+      ],
+      "original_urls": [
+        "https://200.129.244.212/conteudo/noticia/reitoria-do-ifmt-realiza-atividades-em-comemoracao-ao-dia-do-servidor-publico/",
+        "https://antigoportal.ifmt.edu.br/noticias/1011606/"
+      ]
+    }
+  ],
+  "output_files": {
+    "news_articles_full_jsonl": "data\\output\\final_all_sources\\news_articles_full.jsonl",
+    "news_articles_full_csv": "data\\output\\final_all_sources\\news_articles_full.csv",
+    "news_articles_canonical_jsonl": "data\\output\\final_all_sources\\news_articles_canonical.jsonl",
+    "news_articles_canonical_csv": "data\\output\\final_all_sources\\news_articles_canonical.csv",
+    "media_assets_csv": "data\\output\\final_all_sources\\media_assets.csv",
+    "article_links_csv": "data\\output\\final_all_sources\\article_links.csv",
+    "duplicate_groups_csv": "data\\output\\final_all_sources\\duplicate_groups.csv",
+    "dataset_report": "data\\output\\final_all_sources\\dataset_report.json",
+    "quality_report_md": "data\\output\\final_all_sources\\quality_report.md"
+  }
+}
