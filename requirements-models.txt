@@ -1,0 +1,12 @@
+pandas
+numpy
+scikit-learn
+matplotlib
+joblib
+tqdm
+pyarrow
+rank-bm25
+faiss-cpu
+sentence-transformers
+unidecode
+rapidfuzz

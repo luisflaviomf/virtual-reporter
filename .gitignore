@@ -1,0 +1,12 @@
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+data/raw_html/
+data/output/
+data/logs/
+data/processed/
+data/models/
+data/results/
+.env
+.env.*

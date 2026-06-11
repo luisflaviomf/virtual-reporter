@@ -1,0 +1,93 @@
+[
+  {
+    "source_id": "legacy_ip",
+    "source_name": "IFMT legacy portal by IP",
+    "source_type": "legacy_ip",
+    "source_environment": "legacy_ip_portal",
+    "base_url": "https://200.129.244.212",
+    "news_archive_url": "https://200.129.244.212/conteudo/noticias/",
+    "source_access_mode": "ip",
+    "ssl_verify": false,
+    "notes": "Mandatory historical source. Preserve IP as URL base and disable SSL verification only for this host."
+  },
+  {
+    "source_id": "legacy_ip_http",
+    "source_name": "IFMT legacy portal by IP HTTP",
+    "source_type": "legacy_ip",
+    "source_environment": "legacy_ip_portal",
+    "base_url": "http://200.129.244.212",
+    "news_archive_url": "http://200.129.244.212/conteudo/noticias/",
+    "source_access_mode": "ip",
+    "ssl_verify": false,
+    "notes": "HTTP fallback for the mandatory historical source. May redirect to HTTPS on the same IP."
+  },
+  {
+    "source_id": "legacy_domain",
+    "source_name": "IFMT legacy listing by domain",
+    "source_type": "legacy_domain",
+    "source_environment": "legacy_domain_listing",
+    "base_url": "https://ifmt.edu.br",
+    "news_archive_url": "https://ifmt.edu.br/conteudo/noticias/",
+    "source_access_mode": "domain",
+    "ssl_verify": true,
+    "notes": "Diagnostic listing source. Individual historical articles may fail on this host."
+  },
+  {
+    "source_id": "current_portal",
+    "source_name": "IFMT current WordPress portal",
+    "source_type": "current_wordpress",
+    "source_environment": "current_wordpress_portal",
+    "base_url": "https://ifmt.edu.br",
+    "news_archive_url": "https://ifmt.edu.br/blog/categoria/noticias/",
+    "source_access_mode": "domain",
+    "ssl_verify": true
+  },
+  {
+    "source_id": "campus_cba",
+    "source_name": "IFMT Campus Cuiaba",
+    "source_type": "campus_wordpress",
+    "source_environment": "campus_current_portal",
+    "base_url": "https://cba.ifmt.edu.br",
+    "news_archive_url": "https://cba.ifmt.edu.br/categoria/noticias/",
+    "source_access_mode": "domain",
+    "ssl_verify": true,
+    "campus_code": "cba",
+    "campus_name": "Campus Cuiaba"
+  },
+  {
+    "source_id": "campus_bag",
+    "source_name": "IFMT Campus Barra do Garcas",
+    "source_type": "campus_wordpress",
+    "source_environment": "campus_current_portal",
+    "base_url": "https://bag.ifmt.edu.br",
+    "news_archive_url": "https://bag.ifmt.edu.br/categoria/noticias/",
+    "source_access_mode": "domain",
+    "ssl_verify": true,
+    "campus_code": "bag",
+    "campus_name": "Campus Barra do Garcas"
+  },
+  {
+    "source_id": "campus_pdl",
+    "source_name": "IFMT Campus Primavera do Leste",
+    "source_type": "campus_wordpress",
+    "source_environment": "campus_current_portal",
+    "base_url": "https://pdl.ifmt.edu.br",
+    "news_archive_url": "https://pdl.ifmt.edu.br/categoria/noticias/",
+    "source_access_mode": "domain",
+    "ssl_verify": true,
+    "campus_code": "pdl",
+    "campus_name": "Campus Primavera do Leste"
+  },
+  {
+    "source_id": "campus_svc",
+    "source_name": "IFMT Campus Sao Vicente",
+    "source_type": "campus_wordpress",
+    "source_environment": "campus_current_portal",
+    "base_url": "https://svc.ifmt.edu.br",
+    "news_archive_url": "https://svc.ifmt.edu.br/categoria/noticias/",
+    "source_access_mode": "domain",
+    "ssl_verify": true,
+    "campus_code": "svc",
+    "campus_name": "Campus Sao Vicente"
+  }
+]
