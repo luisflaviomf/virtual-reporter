@@ -38,6 +38,67 @@ python -m ifmt_models.cli make-paper-assets
 python -m ifmt_models.cli report-results
 ```
 
+### Avaliacao expandida com GPU (300 casos)
+
+A avaliacao expandida usa uma amostra deterministica de 300 noticias
+(`seed=42`), sem sobreposicao com os 30 casos do piloto. Cada caso e salvo em
+checkpoint assim que termina, portanto uma execucao interrompida pode continuar
+sem repetir os casos ja concluidos.
+
+O launcher recomendado foi preparado para Windows, GPU NVIDIA e Ollama. Ele
+requer:
+
+- Python com as dependencias de `requirements.txt` e
+  `requirements-models.txt`;
+- `ollama.exe` e `nvidia-smi.exe` disponiveis no `PATH`;
+- o modelo local `gemma4:e4b`;
+- os 30 casos-piloto em `data/results/evaluation/test_cases.jsonl`.
+
+Valide o ambiente sem iniciar a avaliacao:
+
+```powershell
+powershell -ExecutionPolicy Bypass -File .\scripts\run_expanded_evaluation.ps1 -PreflightOnly
+```
+
+Execute ou retome a avaliacao completa:
+
+```powershell
+powershell -ExecutionPolicy Bypass -File .\scripts\run_expanded_evaluation.ps1
+```
+
+Para escolher outro diretorio de saida:
+
+```powershell
+powershell -ExecutionPolicy Bypass -File .\scripts\run_expanded_evaluation.ps1 `
+  -OutputDir data/results/minha_avaliacao
+```
+
+O launcher inicia um endpoint Ollama dedicado, ativa Flash Attention, usa cache
+KV `q8_0`, solicita offload integral para CUDA e compara paralelismo 1 e 2 antes
+da execucao. A selecao automatica respeita um teto de 7.800 MiB de VRAM. Se for
+necessario impor um valor por seguranca operacional, use
+`-ParallelismOverride 1` ou `-ParallelismOverride 2`.
+
+O MTP nao e ativado nessa configuracao porque o checkpoint `gemma4:e4b` usado
+no Windows/CUDA nao possui uma camada draft compativel. Essa limitacao e
+registrada nos metadados da execucao.
+
+Tambem e possivel chamar diretamente a CLI, desde que o Ollama e as variaveis
+de ambiente ja estejam configurados:
+
+```bash
+python -m ifmt_models.cli run-expanded-evaluation \
+  --case-count 300 \
+  --seed 42 \
+  --pilot-dir data/results/evaluation \
+  --output-dir data/results/evaluation_300_seed42 \
+  --resume
+```
+
+Os artefatos finais incluem casos e saidas em JSONL, metricas por caso,
+comparacoes em CSV/LaTeX, resumo da amostragem e metadados para auditoria. Por
+padrao, esses arquivos permanecem em `data/results/` e nao sao versionados.
+
 Para treinar/recriar os modelos a partir do dataset versionado:
 
 ```bash
